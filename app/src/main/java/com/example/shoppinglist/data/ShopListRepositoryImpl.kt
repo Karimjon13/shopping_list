@@ -12,7 +12,7 @@ import kotlin.random.Random
     private val shopList = sortedSetOf<ShopItem>(Comparator<ShopItem> { o1, o2 -> o1.id.compareTo(o2.id) })
     private var autoIncrementId = 0
         init {
-            for (i in 0 until 1000){
+            for (i in 0 until 10){
                 val item = ShopItem("Name $i",i, Random.nextBoolean())
                 addShopListItem(item)
             }

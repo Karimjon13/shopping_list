@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import com.example.shoppinglist.R
 import com.example.shoppinglist.domain.ShopItem
 
-class ShopListAdapter: androidx.recyclerview.widget.ListAdapter<ShopItem, ShopItemViewHolder>(
+class ShopListAdapter: androidx.recyclerview.widget.ListAdapter<ShopItem,
+        ShopItemViewHolder>(
     ShopItemDiffCallback()
 ) {
     var onShopItemLongClickListener : ((ShopItem)-> Unit)? = null
@@ -29,6 +30,7 @@ class ShopListAdapter: androidx.recyclerview.widget.ListAdapter<ShopItem, ShopIt
     override fun onBindViewHolder(
         viewHolder: ShopItemViewHolder,
         position: Int
+
     ) {
         val shopItem = getItem(position)
         viewHolder.view.setOnLongClickListener {
