@@ -11,7 +11,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.shoppinglist"
+        applicationId = "com.babayga.shoppinglist"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
